@@ -43,9 +43,6 @@ def chatBotMike():
 				) # The process will repeat and later on it will be implemented on a "while loop"
 				# Another response in advance
 			if chatbotInput == anotherQuestion:
-				#anotherResponse = ("Mike",
-				#	response="",
-				#	)
 				pass
 		elif chatbotInput == "What?":
 			ChatBotEvents = ChatBot("Mike",
@@ -58,4 +55,3 @@ def chatBotMike():
 		while  chatbotInput.strip() == "stop":
 			print("See you!")
 			break
-		
