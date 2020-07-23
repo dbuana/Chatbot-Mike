@@ -1,0 +1,16 @@
+{"intents": [
+	{"tag":"greetings",
+	 "patterns":["Hey!", "What'sup", "sup", "Yo"],
+	 "responses":["Hi", "Nothing Much", "A normal day"],
+	 "context_set":""
+	}
+	{"tag":"current events",
+	"patterns":["What's on the news?", "What's going on?", "Updates?"],
+	"responses": ["Check out BBC to get recent news", "Let me assits you the recent news article", "https://www.bbc.co.uk/"],
+	"context_set":""
+	}
+	{"tag":"questions",
+	 "patterns":["What is the meaning of life?", "Where am I?", "Who are you?"],
+	 "responses":["I don't know", "I am an Artificial Intellegence"]
+	} 
+]}
