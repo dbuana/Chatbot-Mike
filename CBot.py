@@ -86,20 +86,43 @@ def rhetoricQuestions(): # when going to deep in a conversation, the AI will gen
 						f"{line}{line}",
 						[random.randint(f"Should I consider that as a nightmare? ", f"Wow! that was scary indeed...")],
 						f"{line}{line}{line}",
-						[random.randint(f"Would not want to experience that first hand", f"")]
+						[random.randint(f"Would not want to experience that first hand", f"Yikes, that would not be great")]
 					]
-				
+def emotions():
+	# The current version
+	line = {""}
+	emoGood = ["Nice", "Good", "Very Well", "Fun", "Yes"]
+	emoGoodWord = emoGood.lower()
+	emoBad = ["Bad", "Worse", "Not Good", "Suck"]
+	emoBadWord = emoBad.lower()
+	emoWord = [] # It will consist of
+	# The function program
+	for emoGood and emoGoodWord in emoWord:
+		if line == "{line}{emoGood}" or line == "{line}{emoGoodWord}":
+			def reaction(emoGood, emoGoodWord):
+				[
+					f"{line}{emoGood}|{line}{emoGoodWord}|{emoGood}{line}|{emoGoodWord}{line}",
+					random.randint(f"Haha, well nice job", "Wow! well deserved", "Good thinking, very smart for a human"), # THe reactions when AI happy
+					f"{line}{line}{line}"
+				]
+			return reaction(emoGood, emoGoodWord)
+		elif line == "{line}emoBad" or line == "{line}emoBadWord":
+			def reaction(emoBad, emoBadWord):
+				pass # In contradicts the previous results
 # The main program code, along with supporting variables
 name = input("")
 line = input("")
+leaving = input("")
 pairs = [
 	[	# The basic greeting
 		f"Hey|hello|Hello|hi|Hi|Hey",
-		[f"Hey there! What is your name?", name], 
+		[f"Hey there! What is your name?", name],
 		f"My name is {name}|{line}{name}|The name is {name}"
 	],
 	[ 	# Implementing basic personal questions
-		# Type in the code...
+		f"How are you?|{line}|How are you doing?|",
+		[f"I am an artificial intelligence, I am always doing fine. How I feel depends on your actions toward me :-)", "Yeah, I am good; it depends  on your action towards me :-)"],
+		f"{line}"
 	],
 ]
 
@@ -111,3 +134,5 @@ chat = Chat(pairs, reflections)
 chat.converse()
 if __name__ == "__main__":
 	introduction()
+	if line == "{line}bye" or line = "{line}see you":
+		return leavingOut()
