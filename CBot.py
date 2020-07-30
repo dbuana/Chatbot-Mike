@@ -4,6 +4,7 @@
 import nltk
 from nltk.chat.util import Chat, reflections
 import random
+import time # Will implemented on a separate file, because the changes will be massive.
 
 # The functions, mainly for conversations, subjects or alternatives
 def introduction():
@@ -13,26 +14,23 @@ def subjects():
 	expected = 1
 	line = input("")
 	# The beta topics
-	topics = ["Sports", "Business", "Life", "Economics", "Current Events"]
+	topics = ["Sports", "Business", "Life", "Economics", "Current Events"] # To run this program, you can change the main subject topics
 	# The very important statement
 	if topics == "Business" or topics == "business":
 		[
-			[f"You are into business, huh, very interesting..."],
-			f"{line}",
-			[f"{line} what aspect of it do you like?", line],
-			f"I like {line}|{line}"
+			# In advance, for running the code these brackets has to be filled in, if you are familiar with Python; please do so.
 		],
 		[
-			# Life
+			# In advance, for running the code these brackets has to be filled in, if you are familiar with Python; please do so.
 		],
 		[
-			# Sports
+			# In advance, for running the code these brackets has to be filled in, if you are familiar with Python; please do so.
 		],
 		[
-			# Current Events
+			# In advance, for running the code these brackets has to be filled in, if you are familiar with Python; please do so.
 		],
 		[
-			# Economics
+			# In advance, for running the code these brackets has to be filled in, if you are familiar with Python; please do so.
 		]
 		expected = expected + 1
 def switch(subjects):
